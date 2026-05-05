@@ -7,10 +7,12 @@ public class NaturalNumberSumByForLoop{
 		Scanner sc = new Scanner(System.in);
 		int number = sc.nextInt();
 		int calcSum = 0;
-		for(int i=1 ; i<=number ; i++) {
-			calcSum+=i;
+		if(number>=0) {
+			for(int i=1 ; i<=number ; i++) {
+				calcSum+=i;
+			}
+			int sumByFormula = number*(number+1)/2;
+			System.out.print(calcSum+" "+sumByFormula);
 		}
-		int sumByFormula = number*(number+1)/2;
-		System.out.print(calcSum+" "+sumByFormula);
 	}
 }
