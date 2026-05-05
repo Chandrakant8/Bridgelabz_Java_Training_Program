@@ -8,11 +8,13 @@ public class NaturalNumberSum{
 		int number = sc.nextInt();
 		int calcSum = 0;
 		int temp = number;
-		while(temp>0) {
-			calcSum+=temp;
-			temp--;
+		if(temp>=0) {
+			while(temp>0) {
+				calcSum+=temp;
+				temp--;
+			}
+			int sumByFormula = number*(number+1)/2;
+			System.out.print(calcSum+" "+sumByFormula);
 		}
-		int sumByFormula = number*(number+1)/2;
-		System.out.print(calcSum+" "+sumByFormula);
 	}
 }
