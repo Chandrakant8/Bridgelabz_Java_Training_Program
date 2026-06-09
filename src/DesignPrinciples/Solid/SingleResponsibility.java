@@ -21,7 +21,7 @@ class SupplyOrder{
 	}
 }
 
-// class for Customer Service
+// class for Customer Services
 class CustomerService{
 	public void serveCustomer() {
 		System.out.println("Serving customer...");
